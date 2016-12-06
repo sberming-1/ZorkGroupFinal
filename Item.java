@@ -118,7 +118,7 @@ public class Item {
                 GameState.instance().getDungeon().disappearItem(String.valueOf(this));
 
                 Item newItem = GameState.instance().getDungeon().
-                        getItem(command.substring(command.indexOf("("), command.indexOf(")")));
+                        getItem(command.substring(command.indexOf("(")+1, command.indexOf(")")));
 
 
                 GameState.instance().addToInventory(newItem);
@@ -140,7 +140,14 @@ public class Item {
 
     void setWeight(int dmg){
         this.weight = weight - dmg;
-        if(this.weight ==0)
-            GameState.instance().getAdventurersCurrentRoom().remove(this);
+        if(this.weight ==0){
+            if(this.goesBy("Troll")){
+                try {
+                    this.secondaryCommands("[Transform(Key)]");
+                } catch (NoItemException e) {
+                    e.printStackTrace();
+                }
+            }
+            GameState.instance().getAdventurersCurrentRoom().remove(this);}
     }
 }

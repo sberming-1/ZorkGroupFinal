@@ -56,19 +56,19 @@ talk:It's dangerous out there. Find the sword.
 tickle[Wound(90)]:Get your hands off me!
 ---
 Goblin
-150
-attack[Wound(15),Disappear,Score(8)]:You killed the Goblin but you took a beating.
+100
+attack[Wound(15),Score(8)]:You killed the Goblin but you took a beating.
 escape[Wound(10),Teleport,Score(4)]:You took some damage but you made it back safely.
 ---
 Zombie
-300
-attack[Disappear,Wound(40),Score(8)]:Stay away from those bloodhounds. Next time you might not be so lucky!
+100
+attack[Wound(40),Score(8)]:Stay away from those bloodhounds. Next time you might not be so lucky!
 ---
 Troll
-120
+200
 talk:You are lucky I am in a good mood today.
 poke[Wound(90)]:You make me angry. Die.
-attack[Wound(20),Transform(Key)]:You're lucky! It's not wise to fight a troll!
+attack[Wound(20)]:You're lucky! It's not wise to fight a troll!
 ---
 DarthVader
 300
