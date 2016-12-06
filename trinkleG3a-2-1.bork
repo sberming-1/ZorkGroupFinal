@@ -68,7 +68,7 @@ Troll
 200
 talk:You are lucky I am in a good mood today.
 poke[Wound(90)]:You make me angry. Die.
-attack[Wound(20)]:You're lucky! It's not wise to fight a troll!
+attack[Wound(20)]:You swing your Sword.
 ---
 DarthVader
 300

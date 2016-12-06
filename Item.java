@@ -148,6 +148,10 @@ public class Item {
                     e.printStackTrace();
                 }
             }
-            GameState.instance().getAdventurersCurrentRoom().remove(this);}
+            GameState.instance().getAdventurersCurrentRoom().remove(this);
+        }
+        else System.out.println("The " + this.getPrimaryName() + " is not happy you attacked it. It swings back" +
+                "and hit you too. You lose some health");
     }
 }
+
