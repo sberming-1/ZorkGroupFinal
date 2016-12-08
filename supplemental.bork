@@ -9,7 +9,7 @@ Potion
 10
 kick:The bottle breaks spilling magical liquid on the ground.
 shake:A liquid fizzes menacingly inside the can.
-drink[Transform(emptyBottle),Wound(-5)]:It appears to have healed you somewhat!
+drink[Transform(emptyBottle),Wound(-5),Score(8)]:It appears to have healed you somewhat!
 ---
 emptyBottle
 2
@@ -23,7 +23,7 @@ wave[Score(5),Teleport]:Swish and flick -- You find yourself in a new setting!
 ---
 StarWarsToy
 5
-touch[Score(1)]:This doesn't belong here....
+touch[Score(6)]:This doesn't belong here....
 break:Luckily, it's made of rugged plastic.
 ---
 ThreeBroomsticksMug
@@ -32,34 +32,34 @@ refill[Win]:You refill the mug with everlasting butterbeer, and live happily eve
 ---
 chocolateFrog
 7
-eat[Disappear,Wound(-7)]:You feel mildly guilt-ridden, but you got a Dumbledore card!
+eat[Disappear,Wound(-7),Score(3)]:You feel mildly guilt-ridden, but you got a Dumbledore card!
 stomp:The frog stops hopping around is now smooshed.
 ---
 SortingHat
 1
-talk:It's dangerous out there. Find the sword.
-tickle[Wound(90)]:Get your hands off me!
+talk[Score(5)]:It's dangerous out there. Find the sword.
+tickle[Wound(80)]:Get your hands off me!
 ---
 Leprechaun
 100
-attack[Wound(15),Score(8)]:You killed the Leprechaun but you took a beating.
-escape[Wound(10),Teleport,Score(4)]:You took some damage but you made it back safely.
+attack[Wound(15),Score(10)]:You killed the Leprechaun but you took a beating.
+escape[Wound(10),Teleport,Score(5)]:You took some damage but you made it back safely.
 ---
 Werewolf
 100
-attack[Wound(40),Score(8)]:Stay away from those bloodhounds. Next time you might not be so lucky!
+attack[Wound(40),Score(10)]:Stay away from those bloodhounds. Next time you might not be so lucky!
 ---
 Troll
 200
 talk:You are lucky I am in a good mood today.
 poke[Wound(90)]:You make me angry. Die.
-attack[Wound(20)]:You swing your Sword.
+attack[Wound(20),Score(15)]:You swing your Sword.
 ---
 TomRiddle
 300
 talk:I am the Dark Lord
 attack[Die]:You aren't Potter! You will never beat me.
-escape[Wound(15),Teleport]:Stay far away from Tom Riddle. This is your warning.
+escape[Wound(15),Teleport,Score(15)]:Stay far away from Tom Riddle. This is your warning.
 ---
 Key
 2

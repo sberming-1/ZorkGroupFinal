@@ -30,6 +30,6 @@ public class ScoreCommand extends Command
        else if(75>=i && i> 50){rank = "You are at the top of your class";}
        else if(50>=i && i>25){rank = "Keep doing well";}
        else{rank = "You are just getting started";}
-       return Integer.toString(i) + rank +"\n";
+       return Integer.toString(i) + " " +rank +"\n";
    }
 }

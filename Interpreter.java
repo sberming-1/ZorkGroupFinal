@@ -51,7 +51,7 @@ public class Interpreter {
                         || state.getAdventurersCurrentHealth() <= 14) {break;}
                 command = promptUser(commandLine);
             }
-            if(state.getCurrentScore() >= 25){state.setWinCondition(true);}
+            if(state.getCurrentScore() >= 89){state.setWinCondition(true);}
             if(state.getAdventurersCurrentHealth()<=25){state.setLoseCondition(true);};
             if(state.getLoseCondition() == true){GameState.instance().setAdventurersCurrentHealth(0);}
 

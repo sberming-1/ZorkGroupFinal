@@ -154,4 +154,3 @@ public class Item {
                 "and hit you too. You lose some health");
     }
 }
-
