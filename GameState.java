@@ -28,6 +28,7 @@ public class GameState {
     static String CURRENT_ROOM_LEADER = "Current room: ";
     static String INVENTORY_LEADER = "Inventory: ";
     static String HEALTH_LEADER = "Health: ";
+    static String SCORE_LEADER = "Score: ";
 
     private static GameState theInstance;
     private Dungeon dungeon;
@@ -79,6 +80,8 @@ public class GameState {
                 currentRoomLine.substring(CURRENT_ROOM_LEADER.length()));
         String currentHealth = s.nextLine();
         AdventurersCurrentHealth = Integer.parseInt(currentHealth.substring(HEALTH_LEADER.length()));
+        String CurrentScore = s.nextLine();
+        currentScore = Integer.parseInt(CurrentScore.substring(SCORE_LEADER.length()));
         if (s.hasNext()) {
             String inventoryList = s.nextLine().substring(
                     INVENTORY_LEADER.length());
@@ -106,6 +109,7 @@ public class GameState {
         w.println(ADVENTURER_MARKER);
         w.println(CURRENT_ROOM_LEADER + adventurersCurrentRoom.getTitle());
         w.println(HEALTH_LEADER + Integer.toString(getAdventurersCurrentHealth()));
+        w.println(SCORE_LEADER + Integer.toString(getCurrentScore()));
         if (inventory.size() > 0) {
             w.print(INVENTORY_LEADER);
             for (int i=0; i<inventory.size()-1; i++) {
