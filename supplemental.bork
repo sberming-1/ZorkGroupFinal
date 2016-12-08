@@ -66,53 +66,53 @@ Key
 ---
 ===
 Rooms:
-Astronomy Tower
-Contents: Guide,Sword
-This is the tallest tower at Hogwarts Castle. You may study stars and planets
-through large telescopes. The tower is out of bounds except for classes.
----
-Dungeon Chamber
-Contents: Troll,DrPepper
-Beware All Who Enter. If you wander too far you may find yourself in facing a Troll.
----
-Hogwarts Library
-Contents: StarWarsToy,WawaTravelMug,donut,DarthVader
-There are thousands of books on the shelves. You will see books and lanterns floating.
-Beware…at night the library is home to mysterious creatures.
----
-Myrtle’s Bathroom
-Contents: Zombie
-You are brave to enter Myrtle’s bathroom. It has been her home for many years. You can
-hear her crying in the distance. However, this bathroom is home to much more.
----
-Room of Requirement
-Contents: Goblin,Bomb
-This room only reveals itself to those who need it most. Is there something you require..
----
 Great Hall
-Contents: chainsaw,magicWand
+Contents: SortingHat
 Welcome to the main gathering area in the school. Students eat their meals, receive daily
 owl post, and have certain special events here. This hall can hold all of the students, staff
 and guests. There are tall walls that reach up to the ceiling and enchanted candles that float
 from above.
 ---
+Dungeon Chamber
+Contents: Troll,Potion
+Beware All Who Enter. If you wander too far you may find yourself in facing a Troll.
+---
+Hogwarts Library
+Contents: StarWarsToy,ThreeBroomsticksMug,TomRiddle
+There are thousands of books on the shelves. You will see books and lanterns floating.
+Beware…at night the library is home to mysterious creatures.
+---
+Myrtle’s Bathroom
+Contents: Werewolf
+You are brave to enter Myrtle’s bathroom. It has been her home for many years. You can
+hear her crying in the distance. However, this bathroom is home to much more.
+---
+Room of Requirement
+Contents: Leprechaun,chocolateFrog
+This room only reveals itself to those who need it most. Is there something you require..
+---
+Astronomy Tower
+Contents: magicWand,Sword
+This is the tallest tower at Hogwarts Castle. You may study stars and planets
+through large telescopes. The tower is out of bounds except for classes.
+---
 ===
 Exits:
 Astronomy Tower
-u
-Great Hall
----
-Great Hall
 d
+Great Hall
+---
+Great Hall
+u
 Astronomy Tower
 ---
-Astronomy Tower
+Great Hall
 d
 Dungeon Chamber
 ---
 Dungeon Chamber
 u
-Astronomy Tower
+Great Hall
 ---
 Dungeon Chamber
 s
